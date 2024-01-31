@@ -1,0 +1,34 @@
+[
+  {
+    "Reward": 500,
+    "Weight": 2,
+    "FromCityID": 2,
+    "ToCityId": 1,
+    "Address": "15-city-country",
+    "DateOfRecieving": "2023-12-30T10:15:00",
+    "FromCountryID": 2,
+    "ToCountryId": 1
+
+
+  },
+  {
+    "Reward": 1000,
+    "Weight": 2.5,
+    "FromCityID": 1,
+    "ToCityId": 2,
+    "Address": "12-city-country",
+    "DateOfRecieving": "2023-12-30T10:15:00",
+    "FromCountryID": 1,
+    "ToCountryId": 2
+  },
+  {
+    "Reward": 1500,
+    "Weight": 3,
+    "FromCityID": 2,
+    "ToCityId": 1,
+    "Address": "55-city-country",
+    "DateOfRecieving": "2023-12-30T10:15:00",
+    "FromCountryID": 2,
+    "ToCountryId": 1
+  }
+  ]
