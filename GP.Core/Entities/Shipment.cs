@@ -8,6 +8,7 @@ namespace GP.Core.Entities
 {
     public class Shipment : BaseEntity
     {
+
         public decimal Reward { get; set; }
 
         public decimal Weight { get; set; }
@@ -18,11 +19,7 @@ namespace GP.Core.Entities
         public int FromCityID { get; set; }
         public City FromCity { get; set; }
 
-        public int ToCountryId { get; set; }
-        public Country ToCountry { get; set; }
-
-        public int FromCountryID { get; set; }
-        public Country FromCountry { get; set; }
+       
 
         public int ToCityId { get; set; }
         public City ToCity { get; set; }

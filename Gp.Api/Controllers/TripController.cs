@@ -70,13 +70,13 @@ namespace Gp.Api.Controllers
         {
             if (ModelState.IsValid)
             {
-
                 var mappedTrip = mapper.Map<CreateTripDto, Trip>(createTripDto);
-                await tripRepo.AddAsyn(mappedTrip);
+                await tripRepo.AddAsync(mappedTrip);
+                var tripId = mappedTrip.Id;
+                // الآن، قم بالوصول إلى القيمة الصحيحة للـ ID بعد الإضافة
+              
 
-                var tripToDto = mapper.Map<Trip, TripToDto>(mappedTrip);
-
-                return CreatedAtAction(nameof(GetTrips), new { id=tripToDto.Id } ,tripToDto);
+                return CreatedAtAction(nameof(GetTrips), new { id = tripId  });
             }
 
             // Model state is not valid

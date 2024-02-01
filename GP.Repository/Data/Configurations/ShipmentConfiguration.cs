@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,10 @@ namespace GP.Repository.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<Shipment> builder)
         {
-            builder.Property(sh => sh.Reward).IsRequired().HasColumnType("decimal(18,2)");
+            builder.Property(sh => sh.Reward)
+        .IsRequired()
+        .HasColumnType("decimal(18,2)");
+        
             builder.Property(sh => sh.Weight).IsRequired().HasColumnType("decimal(18,2)");
             builder.Property(sh => sh.Address).IsRequired().HasMaxLength(100);
 
@@ -32,16 +36,7 @@ namespace GP.Repository.Data.Configurations
                  .WithMany(p => p.shipments);
 
 
-            builder.HasOne(s => s.FromCountry)
-.WithMany()
-.HasForeignKey(s => s.FromCountryID)
-.IsRequired().OnDelete(DeleteBehavior.NoAction);
-
-
-            builder.HasOne(s => s.ToCountry)
-                .WithMany()
-                .HasForeignKey(s => s.ToCountryId)
-                .IsRequired().OnDelete(DeleteBehavior.NoAction);
+     
 
         }
     }

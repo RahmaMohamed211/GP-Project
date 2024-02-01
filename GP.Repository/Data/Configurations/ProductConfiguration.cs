@@ -21,7 +21,7 @@ namespace GP.Repository.Data.Configurations
             builder.HasOne(P => P.Category).WithMany().HasForeignKey(p=>p.CategoryId);
 
 
-
+ 
 
 
 

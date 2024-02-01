@@ -22,7 +22,7 @@ namespace GP.Repository
         {
             this.dbContext = dbContext;
         }
-        public async  Task AddAsyn(T entity)
+        public async  Task AddAsync(T entity)
           => await dbContext.Set<T>().AddAsync(entity);
 
         public void Delete(T entity)
@@ -64,7 +64,10 @@ namespace GP.Repository
         {
             return SpecificationEvalutor<T>.GetQuery(dbContext.Set<T>(), spec);
         }
-    
-        
+
+        public Task<T> GetByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

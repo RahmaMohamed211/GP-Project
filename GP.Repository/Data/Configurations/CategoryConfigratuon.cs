@@ -14,6 +14,10 @@ namespace GP.Repository.Data.Configurations
         public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.Property(c => c.TypeName).IsRequired().HasMaxLength(100);
+
+            //builder.HasMany(C => C.products)
+            // .WithOne(c => c.Category)
+            // .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

@@ -138,16 +138,10 @@ namespace GP.Repository.Data.Migrations
                     b.Property<int>("FromCityID")
                         .HasColumnType("int");
 
-                    b.Property<int>("FromCountryID")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("Reward")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("ToCityId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ToCountryId")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Weight")
@@ -157,11 +151,7 @@ namespace GP.Repository.Data.Migrations
 
                     b.HasIndex("FromCityID");
 
-                    b.HasIndex("FromCountryID");
-
                     b.HasIndex("ToCityId");
-
-                    b.HasIndex("ToCountryId");
 
                     b.ToTable("shipments");
                 });
@@ -243,31 +233,15 @@ namespace GP.Repository.Data.Migrations
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("GP.Core.Entities.Country", "FromCountry")
-                        .WithMany()
-                        .HasForeignKey("FromCountryID")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
                     b.HasOne("GP.Core.Entities.City", "ToCity")
                         .WithMany()
                         .HasForeignKey("ToCityId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("GP.Core.Entities.Country", "ToCountry")
-                        .WithMany()
-                        .HasForeignKey("ToCountryId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
                     b.Navigation("FromCity");
 
-                    b.Navigation("FromCountry");
-
                     b.Navigation("ToCity");
-
-                    b.Navigation("ToCountry");
                 });
 
             modelBuilder.Entity("GP.Core.Entities.Trip", b =>

@@ -10,6 +10,6 @@ namespace GP.Core.Entities
     {
         public string TypeName { get; set; }
 
-        
+      
     }
 }

@@ -12,9 +12,9 @@ namespace GP.Core.Repositories
     {
         Task<IEnumerable<T>> GetAllAsync();
 
-        Task<T> GetByIdAsyn(int  id);
+        Task<T> GetByIdAsync(int  id);
 
-        Task AddAsyn(T entity);
+        Task AddAsync(T entity);
 
         void Update(T entity);
 
