@@ -40,3 +40,4 @@ D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Core\obj\Debug\net6.0\refint\G
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Core\obj\Debug\net6.0\GP.Core.pdb
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Core\obj\Debug\net6.0\GP.Core.genruntimeconfig.cache
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Core\obj\Debug\net6.0\ref\GP.Core.dll
+D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Core\obj\Debug\net6.0\GP.Core.sourcelink.json

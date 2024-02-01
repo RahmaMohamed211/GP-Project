@@ -38,7 +38,9 @@ namespace Gp.Api
 
             builder.Services.AddAutoMapper(typeof(MappingProfile));
             builder.Services.AddScoped(typeof(IGenericRepositroy<>),typeof(GenericRepositorty<>));
-
+            builder.Services.AddScoped(typeof(INameToIdResolver), typeof(NameToIdResolver));
+            builder.Services.AddScoped(typeof(ICountryRepository),typeof(CountryRepository));
+            builder.Services.AddScoped(typeof(ICityRepository),typeof(CityRepository));
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

@@ -24,5 +24,7 @@ namespace GP.Core.Repositories
         Task<IEnumerable<T>> GetAllWithSpecAsyn(ISpecification<T> spec);
 
         Task<T> GetByIdwithSpecAsyn(ISpecification<T> spec);
+
+      
     }
 }

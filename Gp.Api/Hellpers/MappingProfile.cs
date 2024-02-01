@@ -20,10 +20,15 @@ namespace Gp.Api.Hellpers
 
                 .ReverseMap();
 
-            CreateMap<CreateTripDto, Trip>().ForMember(dest => dest.FromCity, opt => opt.MapFrom(src => src.FromCityName))
-            .ForMember(dest => dest.ToCity, opt => opt.MapFrom(src => src.ToCityName));
-                  
-           
+            CreateMap<CreateTripDto, Trip>()
+           .ForPath(dest => dest.FromCity.NameOfCity, opt => opt.MapFrom(src => src.FromCityName))
+            .ForPath(dest => dest.ToCity.NameOfCity, opt => opt.MapFrom(src => src.ToCityName))
+             .ForPath(dest => dest.FromCity.Country.NameCountry,opt=>opt.MapFrom(src=>src.CountryNameFrom))
+             .ForPath(dest => dest.ToCity.Country.NameCountry, opt => opt.MapFrom(src => src.CountryNameTo));
+
+
+
+
         }
     }
 }

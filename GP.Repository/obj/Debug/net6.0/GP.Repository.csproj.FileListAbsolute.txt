@@ -49,3 +49,4 @@ D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Repository\obj\Debug\net6.0\re
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Repository\obj\Debug\net6.0\GP.Repository.pdb
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Repository\obj\Debug\net6.0\GP.Repository.genruntimeconfig.cache
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Repository\obj\Debug\net6.0\ref\GP.Repository.dll
+D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Repository\obj\Debug\net6.0\GP.Repository.sourcelink.json
