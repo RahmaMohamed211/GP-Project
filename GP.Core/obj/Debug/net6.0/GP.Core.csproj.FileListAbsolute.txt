@@ -41,3 +41,17 @@ D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Core\obj\Debug\net6.0\GP.Core.
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Core\obj\Debug\net6.0\GP.Core.genruntimeconfig.cache
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Core\obj\Debug\net6.0\ref\GP.Core.dll
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Core\obj\Debug\net6.0\GP.Core.sourcelink.json
+D:\Graduation Project\Final Project\GP-Project\GP.Core\bin\Debug\net6.0\GP.Core.deps.json
+D:\Graduation Project\Final Project\GP-Project\GP.Core\bin\Debug\net6.0\GP.Core.runtimeconfig.json
+D:\Graduation Project\Final Project\GP-Project\GP.Core\bin\Debug\net6.0\GP.Core.dll
+D:\Graduation Project\Final Project\GP-Project\GP.Core\bin\Debug\net6.0\GP.Core.pdb
+D:\Graduation Project\Final Project\GP-Project\GP.Core\obj\Debug\net6.0\GP.Core.csproj.AssemblyReference.cache
+D:\Graduation Project\Final Project\GP-Project\GP.Core\obj\Debug\net6.0\GP.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Graduation Project\Final Project\GP-Project\GP.Core\obj\Debug\net6.0\GP.Core.AssemblyInfoInputs.cache
+D:\Graduation Project\Final Project\GP-Project\GP.Core\obj\Debug\net6.0\GP.Core.AssemblyInfo.cs
+D:\Graduation Project\Final Project\GP-Project\GP.Core\obj\Debug\net6.0\GP.Core.csproj.CoreCompileInputs.cache
+D:\Graduation Project\Final Project\GP-Project\GP.Core\obj\Debug\net6.0\GP.Core.dll
+D:\Graduation Project\Final Project\GP-Project\GP.Core\obj\Debug\net6.0\refint\GP.Core.dll
+D:\Graduation Project\Final Project\GP-Project\GP.Core\obj\Debug\net6.0\GP.Core.pdb
+D:\Graduation Project\Final Project\GP-Project\GP.Core\obj\Debug\net6.0\GP.Core.genruntimeconfig.cache
+D:\Graduation Project\Final Project\GP-Project\GP.Core\obj\Debug\net6.0\ref\GP.Core.dll
