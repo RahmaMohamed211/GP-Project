@@ -10,18 +10,18 @@
 
         public DateTime dateofCreation { get; set; }
 
-        public int FromCityID { get; set; }
+        public int? FromCityID { get; set; }
         public string FromCityName { get; set; }
 
-        public int CountryIdFrom { get; set; }
+        public int? CountryIdFrom { get; set; }
 
         public string CountryNameFrom { get; set; }
 
-        public int ToCityId { get; set; }
+        public int? ToCityId { get; set; }
 
         public string ToCityName { get; set; }
 
-        public int CountryIdTo { get; set; }
+        public int? CountryIdTo { get; set; }
 
         public string CountryNameTo { get; set; }
     }

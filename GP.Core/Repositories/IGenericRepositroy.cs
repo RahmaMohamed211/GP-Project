@@ -14,7 +14,7 @@ namespace GP.Core.Repositories
 
         Task<T> GetByIdAsync(int  id);
 
-        Task AddAsync(T entity);
+        Task<int> AddAsync(T entity);
 
         void Update(T entity);
 
@@ -24,6 +24,10 @@ namespace GP.Core.Repositories
         Task<IEnumerable<T>> GetAllWithSpecAsyn(ISpecification<T> spec);
 
         Task<T> GetByIdwithSpecAsyn(ISpecification<T> spec);
+
+   
+
+       
 
       
     }

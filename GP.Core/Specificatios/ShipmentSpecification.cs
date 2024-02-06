@@ -18,13 +18,13 @@ namespace GP.Core.Specificatios
             includes.Add(sh => sh.ToCity.Country);
             includes.Add(sh => sh.FromCity.Country);
             includes.Add(Sh => Sh.Products);
-            //includes.Add(p => p.Products);
+            
 
 
 
 
 
-            //includes.Add(sh => sh.Products).ThenInclude(p => p.Category);
+
 
         }
 
@@ -35,7 +35,7 @@ namespace GP.Core.Specificatios
             includes.Add(T => T.ToCity.Country);
             includes.Add(T => T.FromCity.Country);
             includes.Add(Sh => Sh.Products);
-            
+           
         }
 
     }

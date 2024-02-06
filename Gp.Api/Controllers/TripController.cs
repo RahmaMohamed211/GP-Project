@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Gp.Api.Dtos;
+using Gp.Api.Errors;
 using GP.Core.Entities;
 using GP.Core.Repositories;
 using GP.Core.Specificatios;
@@ -31,26 +32,30 @@ namespace Gp.Api.Controllers
             this.countryRepository = countryRepository;
             this.cityRepository = cityRepository;
         }
-
+        [ProducesResponseType(typeof(TripToDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TripToDto>>> GetTrips()
         {
-            //var trip= await tripRepo.GetAllAsync();
+            
 
             var spec = new TripSpecifications();
             var Trips = await tripRepo.GetAllWithSpecAsyn(spec);
 
+            if (Trips is null) return NotFound(new ApiResponse(404));
             var mappedTrip = mapper.Map<IEnumerable<Trip>, IEnumerable<TripToDto>>(Trips);
 
             return Ok(mappedTrip);
         }
-
+        [ProducesResponseType(typeof(TripToDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         [HttpGet("{id}")]
 
         public async Task<ActionResult<TripToDto>> GetTrip(int id)
         {
             var spec = new TripSpecifications(id);
             var trip = await tripRepo.GetByIdwithSpecAsyn(spec);
+            if (trip is null) return NotFound(new ApiResponse(404));
             var mappedTrip = mapper.Map<Trip, TripToDto>(trip);
             return Ok(mappedTrip);
         }
@@ -66,17 +71,48 @@ namespace Gp.Api.Controllers
        //     return
        // }
         [HttpPost("CreateTrip")]
-        public async Task<ActionResult> CreateTrip(CreateTripDto createTripDto)
+        public async Task<ActionResult<Trip>> CreateTrip( TripToDto tripCreateDto)
         {
             if (ModelState.IsValid)
             {
-                var mappedTrip = mapper.Map<CreateTripDto, Trip>(createTripDto);
-                await tripRepo.AddAsync(mappedTrip);
-                var tripId = mappedTrip.Id;
-                // الآن، قم بالوصول إلى القيمة الصحيحة للـ ID بعد الإضافة
-              
+                // Check if the FromCity exists in the database
+                var fromCity = await cityRepository.GetCityByNameAsync(tripCreateDto.FromCityName);
 
-                return CreatedAtAction(nameof(GetTrips), new { id = tripId  });
+                if (fromCity == null)
+                {
+                    // If not exists, create and add it to the database
+                    fromCity = new City { NameOfCity = tripCreateDto.FromCityName };
+                    await cityRepository.AddAsync(fromCity);
+                }
+
+                // Repeat the same process for ToCity
+                var toCity = await cityRepository.GetCityByNameAsync(tripCreateDto.ToCityName);
+                if (toCity == null)
+                {
+                    toCity = new City { NameOfCity = tripCreateDto.ToCityName };
+                    await cityRepository.AddAsync(toCity);
+                }
+
+                // Check if the FromCountry exists in the database
+                var fromCountry = await countryRepository.GetCountryByNameAsync(tripCreateDto.CountryNameFrom);
+                if (fromCountry == null)
+                {
+                    fromCountry = new Country { NameCountry = tripCreateDto.CountryNameFrom };
+                    await countryRepository.AddAsync(fromCountry);
+                }
+
+                // Repeat the same process for ToCountry
+                var toCountry = await countryRepository.GetCountryByNameAsync(tripCreateDto.CountryNameTo);
+                if (toCountry == null)
+                {
+                    toCountry = new Country { NameCountry = tripCreateDto.CountryNameTo };
+                    await countryRepository.AddAsync(toCountry);
+                }
+
+                var mappedTrip = mapper.Map<TripToDto, Trip>(tripCreateDto);
+                await tripRepo.AddAsync(mappedTrip);
+               // var tripId = mappedTrip.Id;
+                return Ok("Trip Created Successfully");
             }
 
             // Model state is not valid

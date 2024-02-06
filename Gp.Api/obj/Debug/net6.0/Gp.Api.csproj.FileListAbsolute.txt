@@ -305,3 +305,4 @@ D:\Graduation Project\Final Project\GP-Project\Gp.Api\obj\Debug\net6.0\refint\Gp
 D:\Graduation Project\Final Project\GP-Project\Gp.Api\obj\Debug\net6.0\Gp.Api.pdb
 D:\Graduation Project\Final Project\GP-Project\Gp.Api\obj\Debug\net6.0\Gp.Api.genruntimeconfig.cache
 D:\Graduation Project\Final Project\GP-Project\Gp.Api\obj\Debug\net6.0\ref\Gp.Api.dll
+D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\Gp.Api\bin\Debug\net6.0\Gp.Api.staticwebassets.runtime.json

@@ -23,5 +23,7 @@ namespace GP.Repository
         {
             return await dbContext.City.FirstOrDefaultAsync(c => c.NameOfCity == cityName);
         }
+
+        
     }
 }

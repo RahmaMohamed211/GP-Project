@@ -34,7 +34,7 @@ namespace Gp.Api.Middlewares
 
                 var response = env.IsDevelopment()?
                     new ApiExceptionResponse((int)HttpStatusCode.InternalServerError, ex.Message, ex.StackTrace.ToString())
-                    : new ApiExceptionResponse((int)HttpStatusCode.InternalServerError);
+                    : new ApiExceptionResponse((int)HttpStatusCode.InternalServerError,ex.Message);
 
                 var options = new JsonSerializerOptions() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
 

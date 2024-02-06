@@ -1,4 +1,5 @@
 ﻿using Gp.Api.Errors;
+using Gp.Api.Hellpers;
 using GP.Core.Repositories;
 using GP.Repository;
 using Microsoft.AspNetCore.Mvc;
@@ -7,15 +8,18 @@ namespace Gp.Api.Extensions
 {
     public static class ApplicationServicesExtension
     {
+
         public static IServiceCollection AddApplicationServices(this IServiceCollection services) 
         {
-            //services.AddScoped<IGenericRepositroy<>, GenericRepositorty<>>();
+            
             services.AddScoped(typeof(IGenericRepositroy<>), typeof(GenericRepositorty<>));
 
 
-            //services.AddAutoMapper(M => M.AddProfile(new MappingProfiles()));
-
-            //services.AddAutoMapper(typeof(MappingProfiles)); // El mafrood mesh commented
+            services.AddAutoMapper(typeof(MappingProfile));
+            services.AddScoped(typeof(IGenericRepositroy<>), typeof(GenericRepositorty<>));
+            services.AddScoped(typeof(INameToIdResolver), typeof(NameToIdResolver));
+           services.AddScoped(typeof(ICountryRepository), typeof(CountryRepository));
+            services.AddScoped(typeof(ICityRepository), typeof(CityRepository));
 
 
             services.Configure<ApiBehaviorOptions>(options =>

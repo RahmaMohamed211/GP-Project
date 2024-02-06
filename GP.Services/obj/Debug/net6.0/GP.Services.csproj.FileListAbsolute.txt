@@ -20,3 +20,4 @@ D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Services\obj\Debug\net6.0\GP.S
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Services\obj\Debug\net6.0\refint\GP.Services.dll
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Services\obj\Debug\net6.0\GP.Services.pdb
 D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Services\obj\Debug\net6.0\ref\GP.Services.dll
+D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Services\obj\Debug\net6.0\GP.Services.sourcelink.json

@@ -22,8 +22,14 @@ namespace GP.Repository
         {
             this.dbContext = dbContext;
         }
-        public async  Task AddAsync(T entity)
-          => await dbContext.Set<T>().AddAsync(entity);
+        public async  Task<int> AddAsync(T entity)
+        {
+            await dbContext.Set<T>().AddAsync(entity);
+            return await dbContext.SaveChangesAsync();
+        }
+        
+      
+
 
         public void Delete(T entity)
         
@@ -69,5 +75,8 @@ namespace GP.Repository
         {
             throw new NotImplementedException();
         }
+
+       
     }
 }
+

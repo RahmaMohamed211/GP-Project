@@ -15,7 +15,7 @@ namespace GP.Core.Entities
      
         public int CountryId { get; set; }
 
-    public Country Country { get; set; }
+        public Country Country { get; set; }
 
         //Navigation property to represent shipments from this city
         //public ICollection<Shipment> ShipmentsFrom { get; set; } = new HashSet<Shipment>();

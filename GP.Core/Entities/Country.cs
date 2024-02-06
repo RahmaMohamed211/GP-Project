@@ -11,7 +11,7 @@ namespace GP.Core.Entities
     {
         public string NameCountry { get; set; }
 
-        public string Contient { get; set; }
+        public string? Contient { get; set; }
 
        
         public ICollection<City> cities { get; set; } = new HashSet<City>();

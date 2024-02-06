@@ -18,14 +18,14 @@ namespace Gp.Api
 
             // Add services to the container.
 
-           // builder.Services.AddControllers();
+           builder.Services.AddControllers();
 
-            builder.Services.AddControllers()
-                  .AddJsonOptions(options =>
-                      {
-                           options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
-                           options.JsonSerializerOptions.WriteIndented = true;  
-                      });
+            //builder.Services.AddControllers()
+            //      .AddJsonOptions(options =>
+            //          {
+            //               options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+            //               options.JsonSerializerOptions.WriteIndented = true;  
+            //          });
 
 
             ////////////////////
@@ -34,16 +34,12 @@ namespace Gp.Api
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+
             builder.Services.AddApplicationServices();
 
-            builder.Services.AddAutoMapper(typeof(MappingProfile));
-            builder.Services.AddScoped(typeof(IGenericRepositroy<>),typeof(GenericRepositorty<>));
-            builder.Services.AddScoped(typeof(INameToIdResolver), typeof(NameToIdResolver));
-            builder.Services.AddScoped(typeof(ICountryRepository),typeof(CountryRepository));
-            builder.Services.AddScoped(typeof(ICityRepository),typeof(CityRepository));
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+
+            builder.Services.AddSwaggerServices();
+          
 
             var app = builder.Build();
             //Explicity
@@ -68,13 +64,13 @@ namespace Gp.Api
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                //app.UseSwagger();
-                //app.UseSwaggerUI();
+               
                 app.UseSwaggerMiddlewares();
             }
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 

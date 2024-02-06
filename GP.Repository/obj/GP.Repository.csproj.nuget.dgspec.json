@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Repository\\GP.Repository.csproj": {}
+    "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj": {}
   },
   "projects": {
-    "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Core\\GP.Core.csproj": {
+    "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Core\\GP.Core.csproj",
+        "projectUniqueName": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj",
         "projectName": "GP.Core",
-        "projectPath": "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Core\\GP.Core.csproj",
-        "packagesPath": "C:\\Users\\POWER\\.nuget\\packages\\",
-        "outputPath": "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Core\\obj\\",
+        "projectPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj",
+        "packagesPath": "C:\\Users\\rahma\\.nuget\\packages\\",
+        "outputPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\POWER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rahma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,21 +71,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Repository\\GP.Repository.csproj": {
+    "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Repository\\GP.Repository.csproj",
+        "projectUniqueName": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj",
         "projectName": "GP.Repository",
-        "projectPath": "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Repository\\GP.Repository.csproj",
-        "packagesPath": "C:\\Users\\POWER\\.nuget\\packages\\",
-        "outputPath": "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Repository\\obj\\",
+        "projectPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj",
+        "packagesPath": "C:\\Users\\rahma\\.nuget\\packages\\",
+        "outputPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\POWER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rahma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,8 +103,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Core\\GP.Core.csproj": {
-                "projectPath": "D:\\Graduation Project\\Final Project\\GP-Project\\GP.Core\\GP.Core.csproj"
+              "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj": {
+                "projectPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj"
               }
             }
           }
@@ -142,7 +150,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

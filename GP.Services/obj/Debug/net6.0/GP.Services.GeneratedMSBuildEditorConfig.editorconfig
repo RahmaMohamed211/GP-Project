@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GP.Services
-build_property.ProjectDir = D:\Graduation Project\Final Project\GP-Project\GP.Services\
+build_property.ProjectDir = D:\Lasttt Yearrr\GP\ProjectGP2\Gp.Api solution\GP.Services\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
