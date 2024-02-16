@@ -128,6 +128,9 @@ namespace GP.Repository.Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("DateOfRecieving")
                         .HasColumnType("datetime2");
 
@@ -147,6 +150,8 @@ namespace GP.Repository.Data.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("FromCityID");
 
@@ -226,6 +231,12 @@ namespace GP.Repository.Data.Migrations
 
             modelBuilder.Entity("GP.Core.Entities.Shipment", b =>
                 {
+                    b.HasOne("GP.Core.Entities.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.HasOne("GP.Core.Entities.City", "FromCity")
                         .WithMany()
                         .HasForeignKey("FromCityID")
@@ -237,6 +248,8 @@ namespace GP.Repository.Data.Migrations
                         .HasForeignKey("ToCityId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
+
+                    b.Navigation("Category");
 
                     b.Navigation("FromCity");
 

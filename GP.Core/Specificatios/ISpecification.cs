@@ -13,5 +13,18 @@ namespace GP.Core.Specificatios
         public Expression<Func<T, bool>> criteria { get; set; } //siganutre for prop,,,,where
 
         public List<Expression<Func<T, object>>> includes { get; set; }    //include
+
+        public List<Expression<Func<T, object>>> ThenIncludes { get; set; }
+
+
+        public Expression<Func<T,object>> OrderBy { get; set; }
+
+        public Expression<Func<T, object>> OrderByDescending { get; set; }
+
+        public int Skip { get; set; }
+
+        public int Take  { get; set; }
+
+        public bool IsPaginationEnabled { get; set; }
     }
 }

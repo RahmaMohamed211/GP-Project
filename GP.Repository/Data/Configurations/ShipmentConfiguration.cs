@@ -36,7 +36,11 @@ namespace GP.Repository.Data.Configurations
                  .WithMany(p => p.shipments);
 
 
-     
+            builder.HasOne(s => s.Category)
+               .WithMany()
+               .HasForeignKey(s => s.CategoryId)
+               .IsRequired().OnDelete(DeleteBehavior.NoAction);
+
 
         }
     }

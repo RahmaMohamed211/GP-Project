@@ -29,5 +29,8 @@ namespace GP.Core.Entities
         public DateTime DateOfRecieving { get; set; }
 
         public ICollection<Product> Products { get; set; } = new HashSet<Product>();
+
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }  
     }
 }

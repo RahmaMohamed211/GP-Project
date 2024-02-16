@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Gp.Api.Dtos;
 using Gp.Api.Errors;
+using Gp.Api.Hellpers;
 using GP.Core.Entities;
 using GP.Core.Repositories;
 using GP.Core.Specificatios;
@@ -8,6 +9,7 @@ using GP.Repository.Data.Migrations;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Talabat.core.Sepecifitction;
 
 namespace Gp.Api.Controllers
 {
@@ -35,17 +37,18 @@ namespace Gp.Api.Controllers
         [ProducesResponseType(typeof(TripToDto), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TripToDto>>> GetTrips()
-        {
+        public async Task<ActionResult<Pagination<TripToDto>>> GetTrips([FromQuery]TripwShSpecParams tripwShSpec)
+         {
             
 
-            var spec = new TripSpecifications();
+            var spec = new TripSpecifications(tripwShSpec);
             var Trips = await tripRepo.GetAllWithSpecAsyn(spec);
 
             if (Trips is null) return NotFound(new ApiResponse(404));
-            var mappedTrip = mapper.Map<IEnumerable<Trip>, IEnumerable<TripToDto>>(Trips);
-
-            return Ok(mappedTrip);
+            var data = mapper.Map<IEnumerable<Trip>, IEnumerable<TripToDto>>(Trips);
+            var countSpec = new TripWithFilterForCountSpecification(tripwShSpec);
+            var Count =await tripRepo.GetCountWithSpecAsync(countSpec); 
+            return Ok(new Pagination<TripToDto>(tripwShSpec.PageIndex,tripwShSpec.PageSize,Count,data));
         }
         [ProducesResponseType(typeof(TripToDto), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
@@ -75,44 +78,39 @@ namespace Gp.Api.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Check if the FromCity exists in the database
+
+                // استرجاع كائن المدينة المطابق لاسم المدينة المدخل
                 var fromCity = await cityRepository.GetCityByNameAsync(tripCreateDto.FromCityName);
-
-                if (fromCity == null)
-                {
-                    // If not exists, create and add it to the database
-                    fromCity = new City { NameOfCity = tripCreateDto.FromCityName };
-                    await cityRepository.AddAsync(fromCity);
-                }
-
-                // Repeat the same process for ToCity
-                var toCity = await cityRepository.GetCityByNameAsync(tripCreateDto.ToCityName);
-                if (toCity == null)
-                {
-                    toCity = new City { NameOfCity = tripCreateDto.ToCityName };
-                    await cityRepository.AddAsync(toCity);
-                }
-
-                // Check if the FromCountry exists in the database
+                // استرجاع كائن البلد المطابق لاسم البلد المدخل
                 var fromCountry = await countryRepository.GetCountryByNameAsync(tripCreateDto.CountryNameFrom);
-                if (fromCountry == null)
-                {
-                    fromCountry = new Country { NameCountry = tripCreateDto.CountryNameFrom };
-                    await countryRepository.AddAsync(fromCountry);
-                }
-
-                // Repeat the same process for ToCountry
+                // استرجاع كائن المدينة المطابق لاسم المدينة المدخل
+                var toCity = await cityRepository.GetCityByNameAsync(tripCreateDto.ToCityName);
+                // استرجاع كائن البلد المطابق لاسم البلد المدخل
                 var toCountry = await countryRepository.GetCountryByNameAsync(tripCreateDto.CountryNameTo);
-                if (toCountry == null)
-                {
-                    toCountry = new Country { NameCountry = tripCreateDto.CountryNameTo };
-                    await countryRepository.AddAsync(toCountry);
-                }
 
-                var mappedTrip = mapper.Map<TripToDto, Trip>(tripCreateDto);
-                await tripRepo.AddAsync(mappedTrip);
-               // var tripId = mappedTrip.Id;
-                return Ok("Trip Created Successfully");
+                // تحقق مما إذا كانت البيانات المطابقة موجودة
+                if (fromCity != null && fromCountry != null && toCity != null && toCountry != null)
+                {
+                    // تعيين المعرّفات لكائن الرحلة
+                    var mappedTrip = mapper.Map<TripToDto, Trip>(tripCreateDto);
+                    mappedTrip.FromCityID = fromCity.Id;
+                    mappedTrip.FromCity = fromCity;
+                    mappedTrip.FromCity.CountryId = fromCountry.Id;
+
+                    mappedTrip.ToCityId = toCity.Id;
+                    mappedTrip.ToCity = toCity;
+                    mappedTrip.ToCity.CountryId = toCountry.Id;
+
+                    await tripRepo.AddAsync(mappedTrip);
+                    // var tripId = mappedTrip.Id;
+                    return Ok("Trip Created Successfully");
+                }
+                  else
+        {
+            // إذا لم يتم العثور على المدينة أو البلد المطابقين، يتم إرجاع رسالة خطأ
+            return NotFound("City or country not found");
+        }
+                
             }
 
             // Model state is not valid

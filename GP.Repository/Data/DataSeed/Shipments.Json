@@ -5,7 +5,9 @@
     "FromCityID": 2,
     "ToCityId": 1,
     "Address": "15-city-country",
-    "DateOfRecieving": "2023-12-30T10:15:00"
+    "DateOfRecieving": "2023-12-30T10:15:00",
+    "CategoryId": 1
+
 
 
 
@@ -16,8 +18,9 @@
     "FromCityID": 1,
     "ToCityId": 2,
     "Address": "12-city-country",
-    "DateOfRecieving": "2023-12-30T10:15:00"
- 
+    "DateOfRecieving": "2023-12-30T10:15:00",
+    "CategoryId": 2
+
   },
   {
     "Reward": 1500,
@@ -25,7 +28,8 @@
     "FromCityID": 2,
     "ToCityId": 1,
     "Address": "55-city-country",
-    "DateOfRecieving": "2023-12-30T10:15:00"
-    
+    "DateOfRecieving": "2023-12-30T10:15:00",
+    "CategoryId": 1
+
   }
   ]

@@ -23,8 +23,8 @@ namespace Gp.Api
             //builder.Services.AddControllers()
             //      .AddJsonOptions(options =>
             //          {
-            //               options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
-            //               options.JsonSerializerOptions.WriteIndented = true;  
+            //              options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+            //              options.JsonSerializerOptions.WriteIndented = true;
             //          });
 
 

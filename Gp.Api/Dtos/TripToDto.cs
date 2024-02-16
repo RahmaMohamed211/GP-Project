@@ -8,7 +8,7 @@
 
         public DateTime arrivalTime { get; set; }
 
-        public DateTime dateofCreation { get; set; }
+        public DateTime dateofCreation { get; set; }=DateTime.Now;
 
         public int? FromCityID { get; set; }
         public string FromCityName { get; set; }

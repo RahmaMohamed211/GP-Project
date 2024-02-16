@@ -14,6 +14,7 @@ namespace GP.Core.Repositories
 
         Task<T> GetByIdAsync(int  id);
 
+        Task<int> AddRangeAsync(IEnumerable<T> entities);
         Task<int> AddAsync(T entity);
 
         void Update(T entity);
@@ -25,10 +26,13 @@ namespace GP.Core.Repositories
 
         Task<T> GetByIdwithSpecAsyn(ISpecification<T> spec);
 
-   
+        Task<int> GetCountWithSpecAsync(ISpecification<T> spec);
 
-       
-
-      
+        // إضافة العمليات الخاصة بالعلاقة بين المنتجات والشحنات هنا
+        Task AddProductToShipmentAsync(IEnumerable<Product> products, Shipment shipment);
+        Task RemoveProductFromShipmentAsync(Product product, Shipment shipment);
+        Task<IEnumerable<Product>> GetProductsByShipmentIdAsync(int shipmentId);
+        Task<int> SaveChangesAsync();
+        Task<Product> GetByNameAsync(string Name);
     }
 }
