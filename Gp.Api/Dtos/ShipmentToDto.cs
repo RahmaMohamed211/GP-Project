@@ -37,6 +37,8 @@
 
         public string? PictureUrl { get; set; }
 
+       // public IFormFile? Image {  get; set; }
+
         public int? CategoryId { get; set; }
 
         public string CategoryName { get; set; }

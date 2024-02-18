@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,10 @@ namespace GP.Core.Entities
         
         public string PictureUrl { get; set; }
 
-       public int CategoryId { get; set; }
+        //[NotMapped]
+        //public IFormFile? Image { get; set; }
+
+        public int CategoryId { get; set; }
         public Category Category { get; set; }
 
 

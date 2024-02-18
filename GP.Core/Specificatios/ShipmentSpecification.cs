@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using System.Collections;
+using Talabat.core.Sepecifitction;
 
 
 namespace GP.Core.Specificatios
 {
     public class ShipmentSpecification :BaseSpecification<Shipment>
     {
-        public ShipmentSpecification() //get
+        public ShipmentSpecification(TripwShSpecParams tripwShSpec) //get
         {
             includes.Add(sh => sh.FromCity);
             includes.Add(sh => sh.ToCity);
@@ -22,43 +23,33 @@ namespace GP.Core.Specificatios
             includes.Add(Sh => Sh.Products);
             includes.Add(sh => sh.Category);
 
-            // includes.Add(sh => sh.Products.Select(p => p.Category));
+            if (!string.IsNullOrEmpty(tripwShSpec.Sort))
+            {
+                switch (tripwShSpec.Sort)
+                {
+                    case "RewardAsc":
+                        AddOrderBy(T => T.Reward);
+                        break;
+                    case "RewardDesc":
+                        AddOrderByDescending(T => T.Reward);
+                        break;
 
-            // includes.Add(sh => sh.Products.Include(p => p.Category));
-
-
-            //  includes.Add(sh => sh.Products.SelectMany(p => p.Category));
-
-            // includes.Add(sh => Enumerable.Repeat(sh.Products.Select(p => p.Category), 1));
-
-
-            //includes.Add(sh => sh.Products)
-            //    .ThenInclude(c => c.Category);
-
-
-            // includes.Add(sh => sh.Products).ThenInclude(p => p.Category);
-
-
-            //includes.Add(sh => sh.Products.Where(p =>p.Id==1).Select(p => p.Category));
-
-            //includes.Add(sh => sh.Products.AsEnumerable().Select(p => p.Category));
-
-
-
-            //   AddThenInclude(Sh => Sh.Products.Select(p => p.Category));
+                    default:
+                        AddOrderBy(T => T.ToCity.Country.NameCountry);
+                        break;
+                }
+            }
+            //totalTrips=50;
+            //pageSize=10;
+            //pageIndex=3;
+            ApplyPagination(tripwShSpec.PageSize * (tripwShSpec.PageIndex - 1), tripwShSpec.PageSize);
+        
 
 
 
 
 
-
-            //AddThenInclude(Sh => Sh.Products, p => p.Category);
-
-
-
-
-
-        }
+    }
 
         public ShipmentSpecification(int id) : base(T => T.Id == id) //getById
         {

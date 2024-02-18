@@ -37,7 +37,7 @@ namespace Gp.Api.Hellpers
     .ForMember(pd => pd.ProductPrice, o => o.MapFrom(T => T.Products.Select(p => p.ProductPrice).FirstOrDefault()))
     .ForMember(pd => pd.ProductWeight, o => o.MapFrom(T => T.Products.Select(p => p.ProductWeight).FirstOrDefault()))
     .ForMember(pd => pd.PictureUrl, o => o.MapFrom<ProductPictureUrlResolver>())
-   // .ForMember(pd => pd.CategoryId, o => o.MapFrom(T => T.Category.Id))
+    .ForMember(pd => pd.CategoryId, o => o.MapFrom(T => T.Products.Select(p => p.CategoryId).FirstOrDefault()))
     .ForMember(pd => pd.CategoryName, o => o.MapFrom(T => T.Category.TypeName))
     .ReverseMap();
 

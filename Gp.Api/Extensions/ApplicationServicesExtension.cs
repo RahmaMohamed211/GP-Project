@@ -20,6 +20,7 @@ namespace Gp.Api.Extensions
             services.AddScoped(typeof(INameToIdResolver), typeof(NameToIdResolver));
            services.AddScoped(typeof(ICountryRepository), typeof(CountryRepository));
             services.AddScoped(typeof(ICityRepository), typeof(CityRepository));
+            services.AddScoped(typeof(ICategoryRepository), typeof(categoryRepository));
 
 
             services.Configure<ApiBehaviorOptions>(options =>

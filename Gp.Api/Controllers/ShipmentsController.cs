@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Gp.Api.Dtos;
 using Gp.Api.Errors;
+using Gp.Api.Hellpers;
 using GP.Core.Entities;
 using GP.Core.Repositories;
 using GP.Core.Specificatios;
@@ -8,6 +9,7 @@ using GP.Repository;
 using GP.Repository.Data.Migrations;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Talabat.core.Sepecifitction;
 
 namespace Gp.Api.Controllers
 {
@@ -18,31 +20,35 @@ namespace Gp.Api.Controllers
         private readonly IMapper mapper;
         private readonly ICountryRepository countryRepository;
         private readonly ICityRepository cityRepository;
+        private readonly ICategoryRepository categoryRepository;
         private readonly IGenericRepositroy<Product> productRepo;
 
-        public ShipmentsController(IGenericRepositroy<Shipment> ShipmentRepo,IMapper mapper, ICountryRepository countryRepository, ICityRepository cityRepository,IGenericRepositroy<Product> productRepo)
+        public ShipmentsController(IGenericRepositroy<Shipment> ShipmentRepo,IMapper mapper, ICountryRepository countryRepository, ICityRepository cityRepository,ICategoryRepository categoryRepository,IGenericRepositroy<Product> productRepo)
         {
             shipmentRepo = ShipmentRepo;
             this.mapper = mapper;
             this.countryRepository = countryRepository;
             this.cityRepository = cityRepository;
+            this.categoryRepository = categoryRepository;
             this.productRepo = productRepo;
         }
         [ProducesResponseType(typeof(ShipmentToDto), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         [HttpGet]
       
-        public async Task<ActionResult<IEnumerable<ShipmentToDto>>> GetShipments()
+        public async Task<ActionResult<IEnumerable<ShipmentToDto>>> GetShipments([FromQuery] TripwShSpecParams tripwShSpec)
         {
             //var trip= await tripRepo.GetAllAsync();
 
-            var spec = new ShipmentSpecification();
+            var spec = new ShipmentSpecification(tripwShSpec);
             var shipments = await shipmentRepo.GetAllWithSpecAsyn(spec);
 
             if (shipments is null) return NotFound(new ApiResponse(404));
-            var mappedshipments = mapper.Map<IEnumerable<Shipment>, IEnumerable<ShipmentToDto>>(shipments);
-
-            return Ok(mappedshipments);
+            var data = mapper.Map<IEnumerable<Shipment>, IEnumerable<ShipmentToDto>>(shipments);
+            var countSpec = new shipmentsWithFilterForCountSpecification(tripwShSpec);
+            var Count = await shipmentRepo.GetCountWithSpecAsync(countSpec);
+            return Ok(new Pagination<ShipmentToDto>(tripwShSpec.PageIndex, tripwShSpec.PageSize, Count, data));
+            
         }
         [ProducesResponseType(typeof(ShipmentToDto), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
@@ -59,7 +65,7 @@ namespace Gp.Api.Controllers
         }
 
         [HttpPost("CreateShipment")]
-        public async Task<ActionResult<Shipment>> CreateShipment(ShipmentToDto shipmentCreateDto)
+        public async Task<ActionResult<Shipment>> CreateShipment([FromForm]ShipmentToDto shipmentCreateDto, IFormFile image)
         {
             if (ModelState.IsValid)
             {
@@ -68,9 +74,9 @@ namespace Gp.Api.Controllers
                 var fromCountry = await countryRepository.GetCountryByNameAsync(shipmentCreateDto.CountryNameFrom);
                 var toCity = await cityRepository.GetCityByNameAsync(shipmentCreateDto.ToCityName);
                 var toCountry = await countryRepository.GetCountryByNameAsync(shipmentCreateDto.CountryNameTo);
-
+                var category2 = await categoryRepository.GetCategoryByNameAsync(shipmentCreateDto.CategoryName);
                 // التحقق من وجود المدينة والبلد
-                if (fromCity != null && fromCountry != null && toCity != null && toCountry != null)
+                if (fromCity != null && fromCountry != null && toCity != null && toCountry != null && category2 != null)
                 {
                     // تعيين معرفات المدينة والبلد للشحنة
                     var mappedTrip = mapper.Map<ShipmentToDto, Shipment>(shipmentCreateDto);
@@ -81,28 +87,31 @@ namespace Gp.Api.Controllers
                     mappedTrip.ToCityId = toCity.Id;
                     mappedTrip.ToCity = toCity;
                     mappedTrip.ToCity.CountryId = toCountry.Id;
+                 
+                    mappedTrip.CategoryId = category2.Id;
+                    mappedTrip.Category = category2;
 
-                    //// إضافة المنتجات إلى الشحنة
-                    //foreach (var productDto in shipmentCreateDto.Products)
-                    //{
-                    //    // استرجاع المنتج من قاعدة البيانات
-                    //    //var product = await productRepo.GetByIdAsync(productId);
-                    //    //if (product != null)
-                    //    //{
-                    //    //    mappedTrip.Products.Add(product);
-                    //    //    product.shipments.Add(mappedTrip);
-                    //    //}
-                    //    var product = new Product
-                    //    {
-                    //        ProductName = productDto.ProductName,
-                    //        ProductPrice = productDto.ProductPrice,
-                    //        ProductWeight = productDto.ProductWeight,
-                    //        PictureUrl = productDto.PictureUrl,
+                    if (image != null && image.Length > 0)
+                    {
+                        var productImageUrl = DocumentSetting.UploadImage(image, "products");
+                        if (!string.IsNullOrEmpty(productImageUrl))
+                        {
+                            shipmentCreateDto.PictureUrl = productImageUrl; // تخزين العنوان URL في خاصية PictureUrl
+                        }
 
-                    //        // اضف المزيد من البيانات حسب الحاجة
-                    //    };
-                    //    mappedTrip.Products.Add(product);
-                    //}
+
+                        var newProduct = new Product
+                        {
+                            ProductName = shipmentCreateDto.ProductName,
+                            ProductPrice = shipmentCreateDto.ProductPrice,
+                            ProductWeight = shipmentCreateDto.ProductWeight,
+                            PictureUrl = productImageUrl,
+                            CategoryId = category2.Id,
+                        };
+
+                        mappedTrip.Products.Add(newProduct);
+
+                    }
 
                     await shipmentRepo.AddAsync(mappedTrip);
       

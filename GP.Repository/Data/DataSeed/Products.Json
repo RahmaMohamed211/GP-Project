@@ -2,7 +2,7 @@
     "ProductName": "Iphone13",
     "ProductPrice": 1000,
     "ProductWeight":2,
-    "PictureUrl": "images/products/sb-ang1.png",
+    "PictureUrl": "sb-ang1.png",
     "CategoryId": 1
   
 },
@@ -10,13 +10,13 @@
     "ProductName": "skirt",
     "ProductPrice": 1000,
     "ProductWeight":2,
-    "PictureUrl": "images/products/sb-ang1.png",
+    "PictureUrl": "sb-ang1.png",
     "CategoryId": 2
 },
 {
     "ProductName": "Tv",
     "ProductPrice": 1000,
     "ProductWeight":2.5,
-    "PictureUrl": "images/products/sb-ang1.png",
+    "PictureUrl": "sb-ang1.png",
     "CategoryId": 1
 }]
