@@ -3,6 +3,7 @@ using GP.Core.Specificatios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,12 +16,13 @@ namespace GP.Core.Repositories
         Task<T> GetByIdAsync(int  id);
 
         Task<int> AddRangeAsync(IEnumerable<T> entities);
-        Task<int> AddAsync(T entity);
+        Task AddAsync(T entity);
 
         void Update(T entity);
 
         void Delete(T entity);
 
+        Task<bool> DeleteAsync(int id);
 
         Task<IEnumerable<T>> GetAllWithSpecAsyn(ISpecification<T> spec);
 
@@ -34,5 +36,7 @@ namespace GP.Core.Repositories
         Task<IEnumerable<Product>> GetProductsByShipmentIdAsync(int shipmentId);
         Task<int> SaveChangesAsync();
         Task<Product> GetByNameAsync(string Name);
+
+        Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> predicate);
     }
 }

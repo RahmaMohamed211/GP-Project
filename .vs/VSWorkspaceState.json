@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Gp.Api",
-    "\\Gp.Api\\Extensions"
+    "\\Gp.Api\\Controllers",
+    "\\Gp.Api\\Extensions",
+    "\\GP.Services"
   ],
   "SelectedNode": "\\Gp.Api solution.sln",
   "PreviewInSolutionExplorer": false

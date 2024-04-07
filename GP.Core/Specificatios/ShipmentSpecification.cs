@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using System.Collections;
-using Talabat.core.Sepecifitction;
+using GP.core.Sepecifitction;
 
 
 namespace GP.Core.Specificatios
@@ -22,6 +22,7 @@ namespace GP.Core.Specificatios
             includes.Add(sh => sh.FromCity.Country);
             includes.Add(Sh => Sh.Products);
             includes.Add(sh => sh.Category);
+          
 
             if (!string.IsNullOrEmpty(tripwShSpec.Sort))
             {

@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Text.Json;
 
@@ -22,12 +23,11 @@ namespace GP.Repository
         {
             this.dbContext = dbContext;
         }
-        public async  Task<int> AddAsync(T entity)
-        {
-            await dbContext.Set<T>().AddAsync(entity);
-            return await dbContext.SaveChangesAsync();
-        }
+       
+       
 
+        public async Task AddAsync(T entity)
+       => await dbContext.Set<T>().AddAsync(entity);
 
         public async Task<int> AddRangeAsync(IEnumerable<T> entities)
         {
@@ -120,6 +120,28 @@ namespace GP.Repository
             // يعتمد ذلك على هيكل جدول قاعدة البيانات والتسميات المستخدمة
             return await dbContext.Products.FirstOrDefaultAsync(p => p.ProductName == Name);
         }
+
+        public async Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await dbContext.Set<T>().FirstOrDefaultAsync(predicate);
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var Delete = await dbContext.Set<T>().FindAsync(id);
+
+            if (Delete == null)
+            {
+                return false; // Request with the given ID doesn't exist
+            }
+
+            dbContext.Remove(Delete);
+            await dbContext.SaveChangesAsync();
+
+            return true; // Request deleted successfully
+        }
+
+
     }
 }
 

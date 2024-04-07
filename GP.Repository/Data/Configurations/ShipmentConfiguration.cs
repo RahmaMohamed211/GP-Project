@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -40,6 +41,9 @@ namespace GP.Repository.Data.Configurations
                .WithMany()
                .HasForeignKey(s => s.CategoryId)
                .IsRequired().OnDelete(DeleteBehavior.NoAction);
+
+            
+  
 
 
         }

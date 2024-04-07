@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Talabat.core.Sepecifitction;
+using GP.core.Sepecifitction;
 
 namespace GP.Core.Specificatios
 {
@@ -17,7 +17,7 @@ namespace GP.Core.Specificatios
             includes.Add(T => T.ToCity);
             includes.Add(T => T.ToCity.Country);
             includes.Add(T => T.FromCity.Country);
-
+            //includes.Add(sh => sh.User);
             if (!string.IsNullOrEmpty(tripwShSpec.Sort))
             {
                 switch (tripwShSpec.Sort)

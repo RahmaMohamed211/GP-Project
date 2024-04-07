@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Talabat.core.Sepecifitction;
+using GP.core.Sepecifitction;
 
 namespace GP.Core.Specificatios
 {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gp.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb9874acf5b0d09a2fffbf4e9a0665c9d280dae6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46e845193ca86e4c424c1c077b4fdcd63d2be5d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gp.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gp.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

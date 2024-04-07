@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Talabat.core.Sepecifitction
+namespace GP.core.Sepecifitction
 {
     public class TripwShSpecParams
     {
         private const int MaxPageSize = 10;
 
-        private int pageSize = 5; //5
+        private int pageSize = 10; //5
         public int PageSize { get
             {
                 return pageSize;

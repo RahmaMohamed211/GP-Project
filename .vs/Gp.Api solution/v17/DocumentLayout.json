@@ -1,0 +1,959 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\Migrations\\20240222183142_addIdentityindbstore22.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\Migrations\\20240222182730_addIdentityindbstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\genericrepositorty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\genericrepositorty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEBEBD43-0057-440C-95CA-9F39AACEB2EE}|GP.Services\\GP.Services.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEBEBD43-0057-440C-95CA-9F39AACEB2EE}|GP.Services\\GP.Services.csproj|solutionrelative:gp.services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\countryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\countryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\extensions\\identityserviceextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\extensions\\identityserviceextention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\extensions\\applicationservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\extensions\\applicationservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\dtos\\categoriestodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\dtos\\categoriestodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\controllers\\tripcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\controllers\\tripcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\controllers\\shipmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\controllers\\shipmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\dtos\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\dtos\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\hellpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\hellpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\entities\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\entities\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\hellpers\\productpictureurlresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\hellpers\\productpictureurlresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\migrations\\20240223233300_editsenderid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\migrations\\20240223233300_editsenderid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\storecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\storecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\specificatios\\tripspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\specificatios\\tripspecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\specificatios\\tripwshspecparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\specificatios\\tripwshspecparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\specificatios\\tripwithfilterforcountspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\specificatios\\tripwithfilterforcountspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\specificatios\\shipmentswithfilterforcountspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\specificatios\\shipmentswithfilterforcountspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\specificatios\\productbyidsspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\specificatios\\productbyidsspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\specificatios\\basespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\specificatios\\basespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\specificatios\\ispecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\specificatios\\ispecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\entities\\shipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\entities\\shipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\specificatios\\shipmentspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\specificatios\\shipmentspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\entities\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\entities\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\services\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\services\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\entities\\identity\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\entities\\identity\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\entities\\identity\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\entities\\identity\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\identity\\addidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\identity\\addidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\identity\\appidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\identity\\appidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\migrations\\20240223125451_addcommentuserid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\migrations\\20240223125451_addcommentuserid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.api\\dtos\\shipmenttodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E45529C-F1C6-45D8-915F-DA388B92A950}|Gp.Api\\Gp.Api.csproj|solutionrelative:gp.api\\dtos\\shipmenttodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\configurations\\shipmentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\configurations\\shipmentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\migrations\\20240223011352_edittripcoluserid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\migrations\\20240223011352_edittripcoluserid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\migrations\\20240223010525_editshipment22.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\migrations\\20240223010525_editshipment22.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\migrations\\20240223002537_editshioment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\migrations\\20240223002537_editshioment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\repositories\\igenericrepositroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\repositories\\igenericrepositroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.core\\gp.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{09915A05-B20B-4913-BAD4-D8B56624F1C4}|GP.Core\\GP.Core.csproj|solutionrelative:gp.core\\gp.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\configurations\\commentsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\configurations\\commentsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\migrations\\20240222185548_deleteappuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\migrations\\20240222185548_deleteappuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\migrations\\20240222190022_addfkinshipmentidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\migrations\\20240222190022_addfkinshipmentidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\identity\\migrations\\20240222183802_addidentityindbstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\identity\\migrations\\20240222183802_addidentityindbstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|c:\\users\\dell\\desktop\\gp web\\projectgp2\\projectgp2\\gp.api solution\\gp.repository\\data\\migrations\\20240222182158_addidentityindb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{025D7A1E-6169-43D3-80E1-FDD0D670B28D}|GP.Repository\\GP.Repository.csproj|solutionrelative:gp.repository\\data\\migrations\\20240222182158_addidentityindb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericRepositorty.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GenericRepositorty.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\GenericRepositorty.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GenericRepositorty.cs",
+              "RelativeToolTip": "GP.Repository\\GenericRepositorty.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\UserRepository.cs",
+              "RelativeToolTip": "GP.Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "GP.Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Services\\TokenService.cs",
+              "RelativeToolTip": "GP.Services\\TokenService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Program.cs",
+              "RelativeToolTip": "Gp.Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "Gp.Api\\Controllers\\AccountsController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAwDEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\UserDto.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Dtos\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\UserDto.cs",
+              "RelativeToolTip": "Gp.Api\\Dtos\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CountryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\CountryRepository.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\CountryRepository.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\CountryRepository.cs",
+              "RelativeToolTip": "GP.Repository\\CountryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CityRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\CityRepository.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\CityRepository.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\CityRepository.cs",
+              "RelativeToolTip": "GP.Repository\\CityRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "categoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\categoryRepository.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\categoryRepository.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\categoryRepository.cs",
+              "RelativeToolTip": "GP.Repository\\categoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Gp.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\appsettings.json",
+              "RelativeToolTip": "Gp.Api\\appsettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-24T20:57:40.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IdentityServiceExtention.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Extensions\\IdentityServiceExtention.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Extensions\\IdentityServiceExtention.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Extensions\\IdentityServiceExtention.cs",
+              "RelativeToolTip": "Gp.Api\\Extensions\\IdentityServiceExtention.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAIBJwCUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationServicesExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Extensions\\ApplicationServicesExtension.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Extensions\\ApplicationServicesExtension.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Extensions\\ApplicationServicesExtension.cs",
+              "RelativeToolTip": "Gp.Api\\Extensions\\ApplicationServicesExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Dtos\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\RegisterDto.cs",
+              "RelativeToolTip": "Gp.Api\\Dtos\\RegisterDto.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA+wBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoriesToDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\CategoriesToDto.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Dtos\\CategoriesToDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\CategoriesToDto.cs",
+              "RelativeToolTip": "Gp.Api\\Dtos\\CategoriesToDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TripController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\TripController.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Controllers\\TripController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\TripController.cs",
+              "RelativeToolTip": "Gp.Api\\Controllers\\TripController.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAIBJwHAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ShipmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\ShipmentsController.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Controllers\\ShipmentsController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\ShipmentsController.cs",
+              "RelativeToolTip": "Gp.Api\\Controllers\\ShipmentsController.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAIBQwGEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "Gp.Api\\Controllers\\CommentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CityController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\CityController.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Controllers\\CityController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\CityController.cs",
+              "RelativeToolTip": "Gp.Api\\Controllers\\CityController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAIBQwBsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T14:20:21.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Gp.Api\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAIBQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T18:31:41.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CommentDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\CommentDto.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Dtos\\CommentDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\CommentDto.cs",
+              "RelativeToolTip": "Gp.Api\\Dtos\\CommentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Hellpers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Hellpers\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Hellpers\\MappingProfile.cs",
+              "RelativeToolTip": "Gp.Api\\Hellpers\\MappingProfile.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAIBJwEIAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Comments.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\Comments.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Entities\\Comments.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\Comments.cs",
+              "RelativeToolTip": "GP.Core\\Entities\\Comments.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAMBUwBIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductPictureUrlResolver.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Hellpers\\ProductPictureUrlResolver.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Hellpers\\ProductPictureUrlResolver.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Hellpers\\ProductPictureUrlResolver.cs",
+              "RelativeToolTip": "Gp.Api\\Hellpers\\ProductPictureUrlResolver.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20240223233300_editSenderId.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240223233300_editSenderId.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\Migrations\\20240223233300_editSenderId.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240223233300_editSenderId.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\Migrations\\20240223233300_editSenderId.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "StoreContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\StoreContext.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\StoreContext.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\StoreContext.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\StoreContext.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAIBJwAwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TripSpecifications.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\TripSpecifications.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Specificatios\\TripSpecifications.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\TripSpecifications.cs",
+              "RelativeToolTip": "GP.Core\\Specificatios\\TripSpecifications.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TripwShSpecParams.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\TripwShSpecParams.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Specificatios\\TripwShSpecParams.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\TripwShSpecParams.cs",
+              "RelativeToolTip": "GP.Core\\Specificatios\\TripwShSpecParams.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TripWithFilterForCountSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\TripWithFilterForCountSpecification.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Specificatios\\TripWithFilterForCountSpecification.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\TripWithFilterForCountSpecification.cs",
+              "RelativeToolTip": "GP.Core\\Specificatios\\TripWithFilterForCountSpecification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "shipmentsWithFilterForCountSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\shipmentsWithFilterForCountSpecification.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Specificatios\\shipmentsWithFilterForCountSpecification.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\shipmentsWithFilterForCountSpecification.cs",
+              "RelativeToolTip": "GP.Core\\Specificatios\\shipmentsWithFilterForCountSpecification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ProductByIdsSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\ProductByIdsSpecification.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Specificatios\\ProductByIdsSpecification.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\ProductByIdsSpecification.cs",
+              "RelativeToolTip": "GP.Core\\Specificatios\\ProductByIdsSpecification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BaseSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\BaseSpecification.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Specificatios\\BaseSpecification.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\BaseSpecification.cs",
+              "RelativeToolTip": "GP.Core\\Specificatios\\BaseSpecification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ISpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\ISpecification.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Specificatios\\ISpecification.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\ISpecification.cs",
+              "RelativeToolTip": "GP.Core\\Specificatios\\ISpecification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Shipment.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\Shipment.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Entities\\Shipment.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\Shipment.cs",
+              "RelativeToolTip": "GP.Core\\Entities\\Shipment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ShipmentSpecification.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\ShipmentSpecification.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Specificatios\\ShipmentSpecification.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Specificatios\\ShipmentSpecification.cs",
+              "RelativeToolTip": "GP.Core\\Specificatios\\ShipmentSpecification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Trip.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\Trip.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Entities\\Trip.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\Trip.cs",
+              "RelativeToolTip": "GP.Core\\Entities\\Trip.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Dtos\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\LoginDto.cs",
+              "RelativeToolTip": "Gp.Api\\Dtos\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Services\\ITokenService.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Services\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Services\\ITokenService.cs",
+              "RelativeToolTip": "GP.Core\\Services\\ITokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "GP.Core\\Repositories\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\identity\\Address.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Entities\\identity\\Address.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\identity\\Address.cs",
+              "RelativeToolTip": "GP.Core\\Entities\\identity\\Address.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\Category.cs",
+              "RelativeToolTip": "GP.Core\\Entities\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\identity\\AppUser.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Entities\\identity\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Entities\\identity\\AppUser.cs",
+              "RelativeToolTip": "GP.Core\\Entities\\identity\\AppUser.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAawAkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AddIdentityDbContextSeed.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\AddIdentityDbContextSeed.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Identity\\AddIdentityDbContextSeed.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\AddIdentityDbContextSeed.cs",
+              "RelativeToolTip": "GP.Repository\\Identity\\AddIdentityDbContextSeed.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AppIdentityDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\AppIdentityDbContext.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Identity\\AppIdentityDbContext.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\AppIdentityDbContext.cs",
+              "RelativeToolTip": "GP.Repository\\Identity\\AppIdentityDbContext.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAIBJwAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20240223125451_addcommentUserId.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240223125451_addcommentUserId.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\Migrations\\20240223125451_addcommentUserId.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240223125451_addcommentUserId.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\Migrations\\20240223125451_addcommentUserId.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAEBUwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ShipmentToDto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\ShipmentToDto.cs",
+              "RelativeDocumentMoniker": "Gp.Api\\Dtos\\ShipmentToDto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Dtos\\ShipmentToDto.cs",
+              "RelativeToolTip": "Gp.Api\\Dtos\\ShipmentToDto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAcwAoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ShipmentConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Configurations\\ShipmentConfiguration.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\Configurations\\ShipmentConfiguration.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Configurations\\ShipmentConfiguration.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\Configurations\\ShipmentConfiguration.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAIBJwC0AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20240223011352_editTripcolUserId.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240223011352_editTripcolUserId.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\Migrations\\20240223011352_editTripcolUserId.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240223011352_editTripcolUserId.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\Migrations\\20240223011352_editTripcolUserId.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20240223010525_editshipment22.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240223010525_editshipment22.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\Migrations\\20240223010525_editshipment22.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240223010525_editshipment22.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\Migrations\\20240223010525_editshipment22.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20240223002537_editshioment.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240223002537_editshioment.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\Migrations\\20240223002537_editshioment.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240223002537_editshioment.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\Migrations\\20240223002537_editshioment.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IGenericRepositroy.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Repositories\\IGenericRepositroy.cs",
+              "RelativeDocumentMoniker": "GP.Core\\Repositories\\IGenericRepositroy.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\Repositories\\IGenericRepositroy.cs",
+              "RelativeToolTip": "GP.Core\\Repositories\\IGenericRepositroy.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAIBQwBIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "GP.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj",
+              "RelativeDocumentMoniker": "GP.Core\\GP.Core.csproj",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj",
+              "RelativeToolTip": "GP.Core\\GP.Core.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-24T20:57:40.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CommentsConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Configurations\\CommentsConfiguration.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\Configurations\\CommentsConfiguration.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Configurations\\CommentsConfiguration.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\Configurations\\CommentsConfiguration.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwBMAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "20240222185548_deleteAppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240222185548_deleteAppUser.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\Migrations\\20240222185548_deleteAppUser.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240222185548_deleteAppUser.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\Migrations\\20240222185548_deleteAppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20240222190022_addfkinshipmentidentity.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240222190022_addfkinshipmentidentity.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\Migrations\\20240222190022_addfkinshipmentidentity.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240222190022_addfkinshipmentidentity.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\Migrations\\20240222190022_addfkinshipmentidentity.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAIBQwG0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20240222183802_addIdentityindbstore.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\Migrations\\20240222183802_addIdentityindbstore.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Identity\\Migrations\\20240222183802_addIdentityindbstore.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\Migrations\\20240222183802_addIdentityindbstore.cs",
+              "RelativeToolTip": "GP.Repository\\Identity\\Migrations\\20240222183802_addIdentityindbstore.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20240222182158_addIdentityindb.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240222182158_addIdentityindb.cs",
+              "RelativeDocumentMoniker": "GP.Repository\\Data\\Migrations\\20240222182158_addIdentityindb.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\GP Web\\ProjectGP2\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Data\\Migrations\\20240222182158_addIdentityindb.cs",
+              "RelativeToolTip": "GP.Repository\\Data\\Migrations\\20240222182158_addIdentityindb.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAIBQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T20:57:40.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240222183142_addIdentityindbstore22.cs",
+              "DocumentMoniker": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\Migrations\\20240222183142_addIdentityindbstore22.cs",
+              "ToolTip": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\Migrations\\20240222183142_addIdentityindbstore22.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T18:31:42.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240222182730_addIdentityindbstore.cs",
+              "DocumentMoniker": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\Migrations\\20240222182730_addIdentityindbstore.cs",
+              "ToolTip": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\Identity\\Migrations\\20240222182730_addIdentityindbstore.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T18:27:30.781Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GP.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb9874acf5b0d09a2fffbf4e9a0665c9d280dae6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46e845193ca86e4c424c1c077b4fdcd63d2be5d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("GP.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GP.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

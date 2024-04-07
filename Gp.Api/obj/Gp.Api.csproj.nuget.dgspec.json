@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Gp.Api.csproj": {}
+    "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Gp.Api.csproj": {}
   },
   "projects": {
-    "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Gp.Api.csproj": {
+    "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Gp.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Gp.Api.csproj",
+        "projectUniqueName": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Gp.Api.csproj",
         "projectName": "Gp.Api",
-        "projectPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Gp.Api.csproj",
+        "projectPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\Gp.Api\\Gp.Api.csproj",
         "packagesPath": "C:\\Users\\rahma\\.nuget\\packages\\",
-        "outputPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\Gp.Api\\obj\\",
+        "outputPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\Gp.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj": {
-                "projectPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj"
+              "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj": {
+                "projectPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj"
+              },
+              "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Services\\GP.Services.csproj": {
+                "projectPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Services\\GP.Services.csproj"
               }
             }
           }
@@ -53,11 +56,31 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.8.1.5350, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[6.0.26, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.25, )"
+            },
+            "OpenCV": {
+              "target": "Package",
+              "version": "[2.4.11, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.9.0.20240103, )"
+            },
+            "OpenCvSharp4.runtime.win": {
+              "target": "Package",
+              "version": "[4.9.0.20240103, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -87,14 +110,14 @@
         }
       }
     },
-    "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj": {
+    "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj",
+        "projectUniqueName": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj",
         "projectName": "GP.Core",
-        "projectPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj",
+        "projectPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj",
         "packagesPath": "C:\\Users\\rahma\\.nuget\\packages\\",
-        "outputPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\obj\\",
+        "outputPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -128,6 +151,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.8.1.5350, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.25, )"
@@ -137,6 +168,22 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.25, )"
+            },
+            "OpenCV": {
+              "target": "Package",
+              "version": "[2.4.11, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.9.0.20240103, )"
+            },
+            "OpenCvSharp4.runtime.win": {
+              "target": "Package",
+              "version": "[4.9.0.20240103, )"
+            },
+            "Twilio.AspNet.Core": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -159,14 +206,14 @@
         }
       }
     },
-    "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj": {
+    "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj",
+        "projectUniqueName": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj",
         "projectName": "GP.Repository",
-        "projectPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj",
+        "projectPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj",
         "packagesPath": "C:\\Users\\rahma\\.nuget\\packages\\",
-        "outputPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Repository\\obj\\",
+        "outputPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -188,8 +235,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj": {
-                "projectPath": "D:\\Lasttt Yearrr\\GP\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj"
+              "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj": {
+                "projectPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj"
               }
             }
           }
@@ -204,6 +251,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.8.1.5350, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.25, )"
@@ -214,9 +265,110 @@
               "target": "Package",
               "version": "[6.0.25, )"
             },
+            "OpenCV": {
+              "target": "Package",
+              "version": "[2.4.11, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.9.0.20240103, )"
+            },
+            "OpenCvSharp4.runtime.win": {
+              "target": "Package",
+              "version": "[4.9.0.20240103, )"
+            },
             "System.Text.Json": {
               "target": "Package",
               "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Services\\GP.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Services\\GP.Services.csproj",
+        "projectName": "GP.Services",
+        "projectPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Services\\GP.Services.csproj",
+        "packagesPath": "C:\\Users\\rahma\\.nuget\\packages\\",
+        "outputPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rahma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj": {
+                "projectPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Core\\GP.Core.csproj"
+              },
+              "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj": {
+                "projectPath": "D:\\Lasttt Yearrr\\GP\\finalGPProject\\ProjectGP2\\Gp.Api solution\\GP.Repository\\GP.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.8.1.5350, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
+            "OpenCV": {
+              "target": "Package",
+              "version": "[2.4.11, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.9.0.20240103, )"
+            },
+            "OpenCvSharp4.runtime.win": {
+              "target": "Package",
+              "version": "[4.9.0.20240103, )"
             }
           },
           "imports": [

@@ -62,6 +62,38 @@ namespace GP.Repository.Data.Migrations
                     b.ToTable("City");
                 });
 
+            modelBuilder.Entity("GP.Core.Entities.Comments", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Rate")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("SenderId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("GP.Core.Entities.Country", b =>
                 {
                     b.Property<int>("Id")
@@ -115,6 +147,33 @@ namespace GP.Repository.Data.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("GP.Core.Entities.Request", b =>
+                {
+                    b.Property<int>("RequestId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RequestId"), 1L, 1);
+
+                    b.Property<int>("ShipmentId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TripId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RequestId");
+
+                    b.HasIndex("ShipmentId");
+
+                    b.HasIndex("TripId");
+
+                    b.ToTable("Requests");
+                });
+
             modelBuilder.Entity("GP.Core.Entities.Shipment", b =>
                 {
                     b.Property<int>("Id")
@@ -139,6 +198,10 @@ namespace GP.Repository.Data.Migrations
 
                     b.Property<int>("FromCityID")
                         .HasColumnType("int");
+
+                    b.Property<string>("IdentityUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Reward")
                         .HasColumnType("decimal(18,2)");
@@ -177,6 +240,10 @@ namespace GP.Repository.Data.Migrations
                     b.Property<int>("ToCityId")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("arrivalTime")
                         .HasColumnType("datetime2");
 
@@ -190,6 +257,54 @@ namespace GP.Repository.Data.Migrations
                     b.HasIndex("ToCityId");
 
                     b.ToTable("Trips");
+                });
+
+            modelBuilder.Entity("GP.Core.Entities.verficationFaccess", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("MatchStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("accuracy")
+                        .HasColumnType("real");
+
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("verficationFaccess");
+                });
+
+            modelBuilder.Entity("GP.Core.Entities.VerficationFace", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("MatchStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("accuracy")
+                        .HasColumnType("real");
+
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VerficationFaces");
                 });
 
             modelBuilder.Entity("ProductShipment", b =>
@@ -227,6 +342,25 @@ namespace GP.Repository.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("GP.Core.Entities.Request", b =>
+                {
+                    b.HasOne("GP.Core.Entities.Shipment", "Shipment")
+                        .WithMany()
+                        .HasForeignKey("ShipmentId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("GP.Core.Entities.Trip", "Trip")
+                        .WithMany()
+                        .HasForeignKey("TripId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Shipment");
+
+                    b.Navigation("Trip");
                 });
 
             modelBuilder.Entity("GP.Core.Entities.Shipment", b =>

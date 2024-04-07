@@ -7,9 +7,13 @@ using GP.Core.Repositories;
 using GP.Core.Specificatios;
 using GP.Repository;
 using GP.Repository.Data.Migrations;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Talabat.core.Sepecifitction;
+using System.Security.Claims;
+using GP.core.Entities.identity;
+using GP.core.Sepecifitction;
 
 namespace Gp.Api.Controllers
 {
@@ -22,8 +26,9 @@ namespace Gp.Api.Controllers
         private readonly ICityRepository cityRepository;
         private readonly ICategoryRepository categoryRepository;
         private readonly IGenericRepositroy<Product> productRepo;
+        private readonly UserManager<AppUser> userManager;
 
-        public ShipmentsController(IGenericRepositroy<Shipment> ShipmentRepo,IMapper mapper, ICountryRepository countryRepository, ICityRepository cityRepository,ICategoryRepository categoryRepository,IGenericRepositroy<Product> productRepo)
+        public ShipmentsController(IGenericRepositroy<Shipment> ShipmentRepo,IMapper mapper, ICountryRepository countryRepository, ICityRepository cityRepository,ICategoryRepository categoryRepository,IGenericRepositroy<Product> productRepo, UserManager<AppUser> userManager)
         {
             shipmentRepo = ShipmentRepo;
             this.mapper = mapper;
@@ -31,6 +36,7 @@ namespace Gp.Api.Controllers
             this.cityRepository = cityRepository;
             this.categoryRepository = categoryRepository;
             this.productRepo = productRepo;
+            this.userManager = userManager;
         }
         [ProducesResponseType(typeof(ShipmentToDto), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
@@ -44,10 +50,28 @@ namespace Gp.Api.Controllers
             var shipments = await shipmentRepo.GetAllWithSpecAsyn(spec);
 
             if (shipments is null) return NotFound(new ApiResponse(404));
-            var data = mapper.Map<IEnumerable<Shipment>, IEnumerable<ShipmentToDto>>(shipments);
+            var shipmentDtos = new List<ShipmentToDto>();
+            foreach (var shipment in shipments)
+            {
+                var shipmentDto = mapper.Map<Shipment, ShipmentToDto>(shipment);
+
+                // استخدم UserManager للبحث عن اسم المستخدم باستخدام معرّف المستخدم
+                var user = await userManager.FindByIdAsync(shipment.IdentityUserId);
+                if (user != null)
+                {
+                    shipmentDto.UserName = user.DisplayName; // افترضت هنا أن DisplayName هو الخاصية التي تحمل اسم المستخدم
+                }
+                else
+                {
+                    shipmentDto.UserName = "Unknown"; // إذا لم يتم العثور على المستخدم
+                }
+
+                shipmentDtos.Add(shipmentDto);
+            }
+            //var data = mapper.Map<IEnumerable<Shipment>, IEnumerable<ShipmentToDto>>(shipments);
             var countSpec = new shipmentsWithFilterForCountSpecification(tripwShSpec);
             var Count = await shipmentRepo.GetCountWithSpecAsync(countSpec);
-            return Ok(new Pagination<ShipmentToDto>(tripwShSpec.PageIndex, tripwShSpec.PageSize, Count, data));
+            return Ok(new Pagination<ShipmentToDto>(tripwShSpec.PageIndex, tripwShSpec.PageSize, Count, shipmentDtos));
             
         }
         [ProducesResponseType(typeof(ShipmentToDto), StatusCodes.Status200OK)]
@@ -61,24 +85,34 @@ namespace Gp.Api.Controllers
 
             if (shipment is null) return NotFound(new ApiResponse(404));
             var mappedshipment = mapper.Map<Shipment, ShipmentToDto>(shipment);
+            var user = await userManager.FindByIdAsync(shipment.IdentityUserId);
+            if (user != null)
+            {
+                mappedshipment.UserName = user.DisplayName; // افترضت هنا أن DisplayName هو الخاصية التي تحمل اسم المستخدم
+            }
             return Ok(mappedshipment);
         }
-
+        [Authorize]
         [HttpPost("CreateShipment")]
-        public async Task<ActionResult<Shipment>> CreateShipment([FromForm]ShipmentToDto shipmentCreateDto, IFormFile image)
+        public async Task<ActionResult<Shipment>> CreateShipment ([FromForm]ShipmentToDto shipmentCreateDto, IFormFile image)
         {
             if (ModelState.IsValid)
             {
-                // استرجاع المدينة والبلد للشحنة من المستودعات
+                var email = User.FindFirstValue(ClaimTypes.Email);
+
+           
+                var existingUser = await userManager.FindByEmailAsync(email);
+
+              
                 var fromCity = await cityRepository.GetCityByNameAsync(shipmentCreateDto.FromCityName);
                 var fromCountry = await countryRepository.GetCountryByNameAsync(shipmentCreateDto.CountryNameFrom);
                 var toCity = await cityRepository.GetCityByNameAsync(shipmentCreateDto.ToCityName);
                 var toCountry = await countryRepository.GetCountryByNameAsync(shipmentCreateDto.CountryNameTo);
                 var category2 = await categoryRepository.GetCategoryByNameAsync(shipmentCreateDto.CategoryName);
-                // التحقق من وجود المدينة والبلد
-                if (fromCity != null && fromCountry != null && toCity != null && toCountry != null && category2 != null)
+                
+                if (fromCity != null && fromCountry != null && toCity != null && toCountry != null && category2 != null&& existingUser!=null)
                 {
-                    // تعيين معرفات المدينة والبلد للشحنة
+                   
                     var mappedTrip = mapper.Map<ShipmentToDto, Shipment>(shipmentCreateDto);
 
                     mappedTrip.FromCityID = fromCity.Id;
@@ -91,12 +125,19 @@ namespace Gp.Api.Controllers
                     mappedTrip.CategoryId = category2.Id;
                     mappedTrip.Category = category2;
 
+                   
+
+                       mappedTrip.IdentityUserId = existingUser?.Id;
+                    // mappedTrip.User = existingUser;
+                   // mappedTrip.IdentityUserId = existingUser.UserName;
+
+
                     if (image != null && image.Length > 0)
                     {
                         var productImageUrl = DocumentSetting.UploadImage(image, "products");
                         if (!string.IsNullOrEmpty(productImageUrl))
                         {
-                            shipmentCreateDto.PictureUrl = productImageUrl; // تخزين العنوان URL في خاصية PictureUrl
+                            shipmentCreateDto.PictureUrl = productImageUrl;
                         }
 
 
@@ -114,14 +155,16 @@ namespace Gp.Api.Controllers
                     }
 
                     await shipmentRepo.AddAsync(mappedTrip);
-      
-                    await shipmentRepo.SaveChangesAsync(); 
 
-                    return Ok("Shipment Created Successfully");
+                    await shipmentRepo.SaveChangesAsync();
+
+                    return Ok(new { message = "shipment Created Successfully" });
+
+
                 }
                 else
                 {
-                    return NotFound("City or country not found");
+                    return NotFound(new { message = "City or country not found" });
                 }
             }
 

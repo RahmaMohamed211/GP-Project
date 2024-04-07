@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using GP.core.Entities.identity;
 
 namespace GP.Repository.Data
 {
@@ -30,6 +31,13 @@ namespace GP.Repository.Data
 
         public DbSet<Trip> Trips { get; set; }
 
+        public DbSet<Comments> Comments { get; set; }
 
+
+        public DbSet<Request> Requests { get; set; }
+
+     
+
+        public DbSet<verficationFaccess> verficationFaccess { get; set; }
     }
 }

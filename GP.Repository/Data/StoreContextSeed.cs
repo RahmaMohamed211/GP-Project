@@ -72,69 +72,69 @@ namespace GP.Repository.Data
 
             }
 
-            if (!dbComtext.Trips.Any()) //one element inside collection
-            {
+            //if (!dbComtext.Trips.Any()) //one element inside collection
+            //{
 
 
-                var TripsData = File.ReadAllText("../GP.Repository/Data/DataSeed/Trips.Json");
+            //    var TripsData = File.ReadAllText("../GP.Repository/Data/DataSeed/Trips.Json");
 
-                var Trips = JsonSerializer.Deserialize<List<Trip>>(TripsData);
+            //    var Trips = JsonSerializer.Deserialize<List<Trip>>(TripsData);
 
-                if (Trips?.Count > 0)
-                {
-                    foreach (var trip in Trips)
-                        await dbComtext.Trips.AddAsync(trip);
+            //    if (Trips?.Count > 0)
+            //    {
+            //        foreach (var trip in Trips)
+            //            await dbComtext.Trips.AddAsync(trip);
 
 
 
-                    await dbComtext.SaveChangesAsync();
+            //        await dbComtext.SaveChangesAsync();
 
-                }
+            //    }
 
                
 
                 
 
                 
-            }
-            if (!dbComtext.Products.Any()) //one element inside collection
-            {
+            //}
+            //if (!dbComtext.Products.Any()) //one element inside collection
+            //{
 
 
-                var productData = File.ReadAllText("../GP.Repository/Data/DataSeed/Products.Json");
+            //    var productData = File.ReadAllText("../GP.Repository/Data/DataSeed/Products.Json");
 
-                var products = JsonSerializer.Deserialize<List<Product>>(productData);
+            //    var products = JsonSerializer.Deserialize<List<Product>>(productData);
 
-                if (products?.Count > 0)
-                {
-                    foreach (var product in products)
-                        await dbComtext.Products.AddAsync(product);
-
-
-                    await dbComtext.SaveChangesAsync();
-
-                }
-
-            }
-            if (!dbComtext.shipments.Any()) //one element inside collection
-            {
+            //    if (products?.Count > 0)
+            //    {
+            //        foreach (var product in products)
+            //            await dbComtext.Products.AddAsync(product);
 
 
-                var ShipementData = File.ReadAllText("../GP.Repository/Data/DataSeed/Shipments.Json");
+            //        await dbComtext.SaveChangesAsync();
 
-                var shipementes = JsonSerializer.Deserialize<List<Shipment>>(ShipementData);
+            //    }
 
-                if (shipementes?.Count > 0)
-                {
-                    foreach (var shipement in shipementes)
-                        await dbComtext.shipments.AddAsync(shipement);
+            //}
+            //if (!dbComtext.shipments.Any()) //one element inside collection
+            //{
 
 
-                    await dbComtext.SaveChangesAsync();
+            //    var ShipementData = File.ReadAllText("../GP.Repository/Data/DataSeed/Shipments.Json");
 
-                }
+            //    var shipementes = JsonSerializer.Deserialize<List<Shipment>>(ShipementData);
 
-            }
+            //    if (shipementes?.Count > 0)
+            //    {
+            //        foreach (var shipement in shipementes)
+            //            await dbComtext.shipments.AddAsync(shipement);
+
+
+            //        await dbComtext.SaveChangesAsync();
+
+            //    }
+
+            //}
 
 
         }

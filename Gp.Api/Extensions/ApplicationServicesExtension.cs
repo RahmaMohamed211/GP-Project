@@ -2,6 +2,7 @@
 using Gp.Api.Hellpers;
 using GP.Core.Repositories;
 using GP.Repository;
+using GP.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Gp.Api.Extensions
@@ -11,9 +12,12 @@ namespace Gp.Api.Extensions
 
         public static IServiceCollection AddApplicationServices(this IServiceCollection services) 
         {
-            
+            services.AddMemoryCache();
+            services.AddHttpClient();
+            services.AddScoped(typeof(IFaceComparisonResultRepository), typeof(FaceComparisonResultRepository));
             services.AddScoped(typeof(IGenericRepositroy<>), typeof(GenericRepositorty<>));
-
+            services.AddScoped(typeof(FaceComparisonService));
+            services.AddScoped(typeof(IRequestRepository), typeof(RequestRepository));
 
             services.AddAutoMapper(typeof(MappingProfile));
             services.AddScoped(typeof(IGenericRepositroy<>), typeof(GenericRepositorty<>));
@@ -21,6 +25,8 @@ namespace Gp.Api.Extensions
            services.AddScoped(typeof(ICountryRepository), typeof(CountryRepository));
             services.AddScoped(typeof(ICityRepository), typeof(CityRepository));
             services.AddScoped(typeof(ICategoryRepository), typeof(categoryRepository));
+            services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+
 
 
             services.Configure<ApiBehaviorOptions>(options =>
